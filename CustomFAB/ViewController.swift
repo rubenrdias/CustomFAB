@@ -12,9 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let button = FAB(frame: CGRect(x: 0, y: 0, width: FAB.buttonHeight, height: FAB.buttonHeight))
+        button.addToController(self)
+        
     }
 
-
+//    "Photo by Nijwam Swargiary on Unsplash"
+//    "https://unsplash.com/@pixel_talkies?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+//    "https://unsplash.com/s/photos/interesting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 }
-
