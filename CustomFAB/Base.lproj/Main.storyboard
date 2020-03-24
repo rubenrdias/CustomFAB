@@ -7,33 +7,87 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Street Art-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomFAB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_first" translatesAutoresizingMaskIntoConstraints="NO" id="pwF-11-tPR">
+                                <rect key="frame" x="0.0" y="156" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="HMt-N9-w7t"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="&lt; Photo by &gt;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XE2-Mm-5qS">
+                                <rect key="frame" x="16" y="556" width="382" height="35.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pwF-11-tPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CaY-1C-2xS"/>
+                            <constraint firstItem="pwF-11-tPR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="FhP-Gs-AlK"/>
+                            <constraint firstItem="pwF-11-tPR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mos-ZI-kqt"/>
+                            <constraint firstItem="XE2-Mm-5qS" firstAttribute="top" secondItem="pwF-11-tPR" secondAttribute="bottom" id="WyH-vQ-CDY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XE2-Mm-5qS" secondAttribute="trailing" constant="16" id="ldW-CS-oOs"/>
+                            <constraint firstItem="XE2-Mm-5qS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rFZ-RV-Hxf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="First" id="eom-zp-m6k"/>
+                    <navigationItem key="navigationItem" title="Street Art" id="eom-zp-m6k"/>
+                    <connections>
+                        <outlet property="photoTextView" destination="XE2-Mm-5qS" id="KNB-JL-f3b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1971.0144927536232" y="225.66964285714283"/>
         </scene>
-        <!--Second-->
+        <!--Earth View-->
         <scene sceneID="XOd-vS-cPB">
             <objects>
-                <viewController id="7Zl-AN-ySs" customClass="ViewController" customModule="CustomFAB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Zl-AN-ySs" customClass="SecondViewController" customModule="CustomFAB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nUe-Da-TeM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_second" translatesAutoresizingMaskIntoConstraints="NO" id="9cT-Fb-zZX">
+                                <rect key="frame" x="0.0" y="156" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="wxs-HJ-TZJ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="&lt; Photo by &gt;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oUH-f1-had">
+                                <rect key="frame" x="16" y="556" width="382" height="35.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9cT-Fb-zZX" secondAttribute="trailing" id="6hy-Ik-Qen"/>
+                            <constraint firstItem="9cT-Fb-zZX" firstAttribute="leading" secondItem="YkE-H9-krw" secondAttribute="leading" id="Rb9-2J-wRk"/>
+                            <constraint firstItem="oUH-f1-had" firstAttribute="leading" secondItem="YkE-H9-krw" secondAttribute="leading" constant="16" id="SpK-NC-L5n"/>
+                            <constraint firstAttribute="trailing" secondItem="oUH-f1-had" secondAttribute="trailing" constant="16" id="UO1-wF-mTq"/>
+                            <constraint firstItem="9cT-Fb-zZX" firstAttribute="top" secondItem="YkE-H9-krw" secondAttribute="top" constant="16" id="aM8-Gl-leU"/>
+                            <constraint firstItem="oUH-f1-had" firstAttribute="top" secondItem="9cT-Fb-zZX" secondAttribute="bottom" id="s1o-z5-dG2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YkE-H9-krw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Second" id="LZT-3q-Tlq"/>
+                    <navigationItem key="navigationItem" title="Earth View" id="LZT-3q-Tlq"/>
+                    <connections>
+                        <outlet property="photoTextView" destination="oUH-f1-had" id="EkR-Vu-G21"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGA-SS-eeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,8 +99,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EsK-wx-EZ2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="First" image="message.fill" catalog="system" id="0mK-7F-u2f"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Txb-Xv-KST">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Txb-Xv-KST">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -64,8 +118,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ibc-7k-f19" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Second" image="rectangle.fill.on.rectangle.angled.fill" catalog="system" id="69H-2b-VsZ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UQ8-ay-qEo">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UQ8-ay-qEo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -98,6 +152,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image_first" width="1920" height="2560"/>
+        <image name="image_second" width="1920" height="1440"/>
         <image name="message.fill" catalog="system" width="64" height="56"/>
         <image name="rectangle.fill.on.rectangle.angled.fill" catalog="system" width="64" height="50"/>
     </resources>
